@@ -15,8 +15,8 @@ class Person {
   }
 
   void showOutput() {
-    print('Name: ${this.name}');
-    print('Age: ${this.age}');
+    print('this.name');
+    print('this.age');
   }
 }
 

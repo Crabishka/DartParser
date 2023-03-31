@@ -1,6 +1,6 @@
 grammar BaseDartGramma;
 
-value: digit* | '"' (symbol | digit | letter)* '"';
+value: number | '"' (symbol | digit | letter)* '"' | '\'' (symbol | digit | letter)* '\'';
 
 identifier :  letter (letter | digit | '_' )* '?'? ;
 
@@ -10,4 +10,8 @@ symbol : '[' | '\\' | ']' | '^' | '_' | '`' | ' ' | '!' | '?' | '.' ;
 
 digit: '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '0'  ;
 
+number: digit+ ('.' digit+)? ;
 
+comporator: '==' | '!=' | '<' | '>' | '<=' | '>=' ;
+
+WS : [ \t\r\n]* -> skip;

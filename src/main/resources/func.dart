@@ -1,5 +1,5 @@
 void showOutput() {
-  print('Name: ${this.name}');
-  print('Age: ${this.age}');
+  print(123);
+  print(a  , b );
 }
 
